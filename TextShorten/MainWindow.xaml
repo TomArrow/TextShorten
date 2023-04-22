@@ -1,0 +1,31 @@
+﻿<Window x:Class="TextShorten.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextShorten"
+        mc:Ignorable="d"
+        Title="TextShorten" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="inputTxt" Grid.Row="0" ScrollViewer.CanContentScroll="True" TextWrapping="Wrap"
+  AcceptsReturn="True"
+  VerticalScrollBarVisibility="Visible">
+            
+        </TextBox>
+        <WrapPanel Grid.Row="1">
+
+            <Button Grid.Row="1" Click="Button_Click">Method 1.</Button>
+            <Button Grid.Row="1" Click="Button_Click_1">Method 2.</Button>
+        </WrapPanel>
+        <TextBox Grid.Row="2" x:Name="outputTxt" ScrollViewer.CanContentScroll="True" TextWrapping="Wrap"
+  AcceptsReturn="True"
+  VerticalScrollBarVisibility="Visible">
+            
+        </TextBox>
+    </Grid>
+</Window>
